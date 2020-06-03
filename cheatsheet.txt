@@ -1,9 +1,31 @@
+#############################
+###  Befehle in der Bash: ###
+#############################
+
+pwg - zeigt den akruellen Pfad an
+
+ls - listet den Inhalt des aktuellen Ordners auf (dir)
+
+cd - change direktory
+
+
+######################
+###   GIT-BEFEHLE  ###
+######################
+
 git init -  erstellt ein GitRepository
 
 git status - zeigt status des aktuellen Gitrepos an
 
 git add [DATEINAME]- fügt datei der stagingarea hinzu
 
+git add *.jpg - fügt alle JPG- Dateien dem Repo hinzu
+
 git commit [DATEINAME] - fügt Datei dem Repository hinzu
 
 git commit . - fügt ALLE im Ordner vorhandenen Dateien dem Repo hinzu  
+
+git commit -m "NACHRICHT"
+
+git remove (veraltet)
+git rm DATEINAME  Löscht (beim nächsten commit) die Datei aus dem Verzeichnis bzw entfernt Dateien aus der TrackingListe
