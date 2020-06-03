@@ -1,2 +1,9 @@
-git init
-erstellt ein GitRepository
+git init -  erstellt ein GitRepository
+
+git status - zeigt status des aktuellen Gitrepos an
+
+git add [DATEINAME]- fügt datei der stagingarea hinzu
+
+git commit [DATEINAME] - fügt Datei dem Repository hinzu
+
+git commit . - fügt ALLE im Ordner vorhandenen Dateien dem Repo hinzu  
