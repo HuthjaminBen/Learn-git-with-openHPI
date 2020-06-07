@@ -2,7 +2,7 @@
 ###  Befehle in der Bash: ###
 #############################
 
-pwg - zeigt den akruellen Pfad an
+pwd - zeigt den akruellen Pfad an
 
 ls - listet den Inhalt des aktuellen Ordners auf (dir)
 
@@ -29,3 +29,27 @@ git commit -m "NACHRICHT"
 
 git remove (veraltet)
 git rm DATEINAME  Löscht (beim nächsten commit) die Datei aus dem Verzeichnis bzw entfernt Dateien aus der TrackingListe
+
+git remote - zeigt verbindungen zu onlinerepos an
+
+git remote add [alias] [url] - verbindet lokales und onlineRepository alias ist dabe der Name des Projektes Online
+
+git remote rename [alias] [neuer alias] - umbenennen einer Datei in beiden Repos
+
+git remote rm [alias] - löscht daten aus Repos entfernt 
+
+git clone [url] [alias] - Url ist die adresse, woher die Daten kommen und alisa der Name unter dem es dann lokal zu finden ist.
+
+git push origin/<branch> (origin/master) - schiebt die Comitteten Daten auf das Online-Repo in den gewollten branch
+
+git fetch - zieht die Änderungen vom OnlineRepo auf den client WENDET sie aber noch nicht auf das Repo an!
+
+git merge origin/<branch> - wendet die änderungen auf die lokale kopie des Repos an
+
+git pull - verbindet fetch und merge
+
+
+
+
+
+
