@@ -8,6 +8,8 @@ ls - listet den Inhalt des aktuellen Ordners auf (dir)
 
 cd - change direktory
 
+clear - räumt die Ansich auf
+
 
 ######################
 ###   GIT-BEFEHLE  ###
