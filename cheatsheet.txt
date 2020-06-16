@@ -10,6 +10,8 @@ cd - change direktory
 
 clear - räumt die Ansich auf
 
+q oder quit
+
 
 ######################
 ###   GIT-BEFEHLE  ###
@@ -49,6 +51,70 @@ git fetch - zieht die Änderungen vom OnlineRepo auf den client WENDET sie aber 
 git merge origin/<branch> - wendet die änderungen auf die lokale kopie des Repos an
 
 git pull - verbindet fetch und merge
+
+git branch - zeigt alle Branches an (macht $ ls .git/refs/heads) auch
+
+git branch [branchname] - erzeugt einen neuen Zeiger, der auf den neusten commit
+
+git checkout [branchmname] - sorgt dafür, dass der HEAD auf den aktuellen Branch zeigt
+
+git checkout -b [newbranchname] kombiniert git branch und git checkout
+
+git merge [branchname] -m "kommentar zum merge" - merged den angegebenen branch in den Branch auf dem wir uns (HEAD) gerade befinden
+
+git branch -d [branchname] - löscht den Branch (d=delete) mit -D kann man das erzwingen
+
+git log - zeigt History an
+	OPTIONEN
+	git log -p   - zeigt die unterschiede an
+	git log -[Zahl]   - zeigt die letzten [Zahl] Änderungen an
+	git log --stat:   - eine Statistik wird mit angezeigt
+	git log --pretty    -"bessere" formatierung 
+	git log --oneline    - einzeilig
+	git log --graph	     - fügt startzeile zur besseren abtrennung der einzelnen commoits ein
+ 	git log --decorate
+
+git commit --amend  -  ersetzt den vorhergehenden Commit (z.B. tipper bei der Message
+git commit --amend -m   - direkt die Neue Message einfügen
+
+git reset HEAD [zuEntfernendeDatei]    - entfernt Dateien aus der Stageing -liste HEAD ist der default
+
+git checkout --[dateiname]   - LÖSCHT !!! aktuelle änderungen in der Datei NICHT wiederherstellbar
+
+git reset --sft|mixed|hard [prüfsumme]   - setzt zu einem bestimmten Commit zurück
+git reset HEAD@{1} - bereits verworfenen Head wieder ansteueern
+git reset HEAD~   - setzt den Zeiger einen commit zurück  ~~~ setzt 3 commits zurück 
+git reset --soft HEAD~    -HEAD und Master werden zurückgesetzt
+git reset --mixed HEAD~   -(das ist der Default) HEAD, Master UND Staging Area werden zurückgesetzt 
+git reset --hard HEAD~    - so. zzgl. das Arbeitsverzeichnis wird zurückgesetzt (UNSICHER lokale Änderungen werden GELÖSCHT)
+
+git reflog  - zeigt alle (auch verworfene) Commit-Prüfsummen an
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
